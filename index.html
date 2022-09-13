@@ -7,17 +7,20 @@
     <title>Clima App</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
-    <link rel="icon" href="css/img/clima-1-760x500.jpg">
+    <link rel="icon" href="css/img/climaimag.png">
 </head>
 
 <body>
     <header>
-        <h1>
-            <span>Clima App</span>
-        </h1>
+        <div class="flex">
+            <img class="icono" src="css/img/climaimag.png" alt="clima">
+            <h1 id="tituloconicono">
+                <span>Clima App</span>
+            </h1>
+        </div>
         <nav>
             <ul>
-                <li class="current-page"><a href="#">Mi App</a></li>
+                <li id="indice" class="current-page"><a href="#">Mi App</a></li>
                 <li><a href="add-city.html">Agregar Ciudad</a></li>
                 <li><a href="help.html">Ayuda</a></li>
             </ul>
@@ -31,15 +34,15 @@
 botón de consultar -->
 
             <form>
-                <label for="Seleccionar ciudad">Usuario</label>
+                <label for="Seleccionar ciudad"></label>
 
-                <select name="Seleccionarciudad">
+                <select name="Seleccionarciudad" class="seleccionador">
                     <option value=”Seleccionarciudad” - disabled - selected>Seleccionar ciudad</option>
                     <option value="ROSARIO">Rosario</option>
                     <option value="RAFAELA">Rafaela</option>
                 </select>
 
-                <input type="submit" value="Consultar" />
+                <input type="submit" value="Consultar" class="button" />
             </form>
 
         </section>
@@ -47,7 +50,7 @@ botón de consultar -->
             <!-- Sección donde se debe mostrar el clima de la ciudad -->
             <div class="card">
                 <h3> Rosario</h3>
-                <img src="“http://openweathermap.org/img/wn/01d@2x.png">
+                <img src="http://openweathermap.org/img/wn/01d@2x.png">
                 <p>Temperatura: 26.45º</p>
                 <p>Sensación térmica 28.12º</p>
                 <p>Humedad: 45%</p>

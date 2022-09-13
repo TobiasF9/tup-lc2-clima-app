@@ -11,8 +11,7 @@
     --color-theme: #00594c;
     --color-active: #5df2d6;
     --color-back-active: #04957d;
-    --color-gradient: linear-gradient(to right, var(--color-theme),
-            var(--color-back-active));
+    --color-gradient: linear-gradient(to right, var(--color-theme), var(--color-back-active));
 }
 
 body {
@@ -35,7 +34,34 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--color-theme);
+    /*background: var(--color-theme);*/
+    background: -webkit-linear-gradient(left, #00594c, #04957d);
+    border: 2px, solid;
+    border-radius: 0px 0px 30px 30px;
+}
+
+#tituloconicono {
+    
+
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    margin-right: 25px;
+    padding-top: 8px;
+}
+
+.icono {
+    /*float: left;*/
+    /*display: inline-block;
+    
+    margin-left: 650px;
+    margin-top: 12px;*/
+
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
 }
 
 nav>ul {
@@ -45,22 +71,25 @@ nav>ul {
 }
 
 nav li {
-    flex:
-        0 0 auto;
+    flex: 0 0 auto;
+    color: #00594c;
+    border-radius: 15px 15px 0px 0px;
 }
 
-nav li a {
+nav li a/*:not(#indice)*/ {
     display: block;
     padding: 16px 12px;
     text-align: center;
     text-decoration: none;
     font-size: 1em;
     font-weight: bold;
-    color: var (--color-active);
+    color: #5df2d6;
+    /*color: var (--color-active);*/
+    
 }
 
 nav li.current-page a {
-    color: var (--color-theme);
+    color: #00453b;
     background-color: var (--color-active);
     pointer-events: none;
 }
@@ -75,8 +104,7 @@ main {
 
 h1 {
     text-align: center;
-    margin:
-        0;
+    margin: 0;
     color: white;
 }
 
@@ -104,11 +132,13 @@ main section {
 footer {
     position: fixed;
     bottom: 0px;
-    background: var (--color-theme);
+    /*background: var (--color-theme);*/
     width: 100%;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    background: -webkit-linear-gradient(left, #00594c, #04957d);
+    border: 2px, solid;
 }
 
 footer p {
@@ -135,4 +165,31 @@ main p {
 
 li.current-page {
     background-color: aqua;
+}
+
+.card {
+    margin: 25px 0;
+    border-radius: 15px;
+    box-shadow: 1.5px 0px 3px 3px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 1px 11px 1px 11px;
+    max-height: 350px;
+}
+
+div p {
+    line-height: 80%;
+}
+
+.seleccionador {
+    border-radius: 6px;
+    border-color: black;
+    height: 35px;
+}
+
+.button {
+    background-color: #00594c;
+    height: 35px;
+    width: 90px;
+    border-radius: 10px;
+    color: white;
 }
