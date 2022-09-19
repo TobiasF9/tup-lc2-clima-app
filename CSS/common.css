@@ -40,9 +40,79 @@ header {
     border-radius: 0px 0px 30px 30px;
 }
 
-#tituloconicono {
-    
+/* sigo con add city. 19/9 */
 
+form label {
+    display: block;
+}
+
+form input {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#agg {
+    border-radius: 8px;
+    padding: 4px;
+}
+
+#Agregar {
+    background-color: #00453b;
+    border-radius: 6px;
+    color: white;
+    padding: 5px;
+}
+
+.parrafos_ciudades {
+    display: block;
+    background-color: #00453b;
+    width: 500px;
+    border-radius: 8px;
+    margin: 12px auto;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    
+}
+
+#parrafo_rojo {
+    background-color: #dc3545;
+}
+
+#parrafo_amarillo {
+    background-color: #ffc107;
+}
+
+#parrafo_verde {
+    background-color: #28a745;
+}
+
+.boton_help {
+    display: inline;
+    margin: 8px;
+    width: 100px;
+    height: 35px;
+    color: white;
+    background-color: #00453b;
+    border-radius: 8px;
+}
+
+#segundo_parrafo_rojo {
+    display: block;
+    background-color: #00453b;
+    width: 500px;
+    border-radius: 8px;
+    margin: 12px auto;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    background-color: #dc3545;
+}
+
+.formulario_help {
+    border-radius: 8px;
+    width: 260px;
 }
 
 .flex{

@@ -35,26 +35,30 @@
         </section>
 
         <section>
-            <p>Para poder consultar el clima, primero deberá<a href="add-city.html">Agregar una ciudad</a> y luego
+            <p>Para poder consultar el clima, primero deberá <a href="add-city.html">Agregar una ciudad</a> y luego
                 seleccionar la Ciudad en cuestión desde la página <a href="index.html">Clima</a>.</p>
         </section>
 
         <section>
             <form>
                 <label for="Nombre">Nombre:</label>
-                <input type="text" id="Nombre" name="Nombre" />
+                <input type="text" id="Nombre" name="Nombre" class="formulario_help" />
 
                 <label for="Email">Email:</label>
-                <input type="email" id="Email" name="Email" />
+                <input type="email" id="Email" name="Email" class="formulario_help" />
 
-                <textarea name="Mensaje" rows="10" cols="30">
-                    Mensaje
+                <label for="Mensaje">Mensaje:</label>
+                <textarea name="Mensaje" rows="10" cols="30" class="formulario_help" >
                 </textarea>
 
-                <input type="submit" value="Limpiar" />
-                <input type="submit" value="Enviar" />
+                <section>
+                    <input type="submit" value="Limpiar" class="boton_help" />
+                    <input type="submit" value="Enviar" class="boton_help" />
+                </section>
             </form>
         </section>
+
+        <p id="segundo_parrafo_rojo">Ingrese un mail válido</p>
 
     </main>
     <footer>
