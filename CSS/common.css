@@ -40,8 +40,6 @@ header {
     border-radius: 0px 0px 30px 30px;
 }
 
-/* sigo con add city. 19/9 */
-
 form label {
     display: block;
 }
@@ -65,7 +63,7 @@ form input {
 }
 
 .parrafos_ciudades {
-    display: block;
+    display: none;
     background-color: #00453b;
     width: 500px;
     border-radius: 8px;
@@ -73,19 +71,21 @@ form input {
     padding: 15px;
     color: white;
     text-align: center;
-    
 }
 
 #parrafo_rojo {
     background-color: #dc3545;
+    display: none;
 }
 
 #parrafo_amarillo {
     background-color: #ffc107;
+    display: none;
 }
 
 #parrafo_verde {
     background-color: #28a745;
+    display: none;
 }
 
 .boton_help {
