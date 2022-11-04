@@ -38,18 +38,19 @@ botón de consultar -->
                 <label for="Seleccionar ciudad"></label>
 
                 <select name="Seleccionarciudad" class="seleccionador" id="select_one">
+                    <script>opcionesSelect();</script>
                     <option value=”Seleccionarciudad” - disabled - selected>Seleccionar ciudad</option>
-                    <option value="ROSARIO">Rosario</option>
-                    <option value="RAFAELA">Rafaela</option>
+                    <!-- <option value="ROSARIO">Rosario</option> -->
+                    <!-- <option value="RAFAELA">Rafaela</option> -->
                 </select>
 
-                <input type="submit" value="Consultar" class="button" />
+                <input type="button" value="Consultar" class="button" onclick="llamarDatos()" />
             </form>
 
         </section>
         <section id="section-weather-result">
             <!-- Sección donde se debe mostrar el clima de la ciudad -->
-            <div class="card">
+             <div class="card" id="cartaparacambiar">
                 <h3> Rosario</h3>
                 <img src="http://openweathermap.org/img/wn/01d@2x.png">
                 <p>Temperatura: 26.45º</p>
@@ -57,7 +58,7 @@ botón de consultar -->
                 <p>Humedad: 45%</p>
                 <p>Velocidad del viento: 3.74 km/h</p>
                 <p>Presión: 1011 P</p>
-            </div>
+            </div> 
         </section>
     </main>
     <footer>
